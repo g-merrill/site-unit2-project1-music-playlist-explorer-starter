@@ -1,0 +1,38 @@
+[
+  {
+    "playlistID": "",
+    "playlist_name": "",
+    "playlist_author": "",
+    "playlist_art": "",
+    "songs": [
+      {
+        "title": "",
+        "artist": "",
+        "duration": ""
+      },
+      {
+        "title": "",
+        "artist": "",
+        "duration": ""
+      }
+    ]
+  },
+  {
+    "playlistID": "",
+    "playlist_name": "",
+    "playlist_author": "",
+    "playlist_art": "",
+    "songs": [
+      {
+        "title": "",
+        "artist": "",
+        "duration": ""
+      },
+      {
+        "title": "",
+        "artist": "",
+        "duration": ""
+      }
+    ]
+  }
+]
