@@ -55,7 +55,6 @@ const generatePlaylistHeartMap = playlists => {
   playlists.forEach(playlist => {
     playlistHeartMap[playlist.playlistID] = false
   })
-  console.log(playlistHeartMap)
 }
 
 const toggleHeartClick = playlistID => {
