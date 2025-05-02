@@ -2,6 +2,7 @@
 var modal = document.getElementById('playlistModal')
 var span = document.getElementsByClassName('close')[0]
 const playlistHeartMap = {}
+let selectedPlaylistSongList = []
 
 function openModal(playlist) {
   document.getElementById('playlistImage').src = playlist.imageUrl
@@ -9,10 +10,9 @@ function openModal(playlist) {
   document.getElementById(
     'playlistAuthor',
   ).innerText = `Author: ${playlist.author}`
-  const songsHtml = playlist.songs.reduce((acc, song) => {
-    return (
-      acc +
-      `
+  selectedPlaylistSongList = []
+  playlist.songs.forEach(song => {
+    selectedPlaylistSongList.push(`
         <div class="modal-song-row">
           <img src="${song.image}" alt="song image" width="75px">
           <div class="modal-song-text-ctnr">
@@ -20,13 +20,20 @@ function openModal(playlist) {
             <p>${song.artist}</p>
             <p>${song.album}</p>
           </div>
-          <p class="modal-song-duration">3:00</p>
+          <p class="modal-song-duration">${song.duration}</p>
         </div>
-    `
-    )
-  }, '')
-  document.getElementById('playlistSongs').innerHTML = songsHtml
+    `)
+  })
+  document.getElementById('playlistSongs').innerHTML = selectedPlaylistSongList.join('')
   modal.style.display = 'block'
+}
+
+const shuffleSongs = () => {
+  selectedPlaylistSongList = selectedPlaylistSongList.sort(
+    () => Math.random() - 0.5,
+  )
+  document.getElementById('playlistSongs').innerHTML =
+    selectedPlaylistSongList.join('')
 }
 
 span.onclick = function () {
@@ -99,7 +106,7 @@ const createPlaylistCards = async () => {
       const songData = playlist.songs.reduce((song_acc, song, song_idx) => {
         return (
           song_acc +
-          `{ image: '${song.image}', title: '${song.title}', artist: '${song.artist}', album: '${song.artist}', duration: '${song.duration}' },`
+          `{ image: '${song.image}', title: '${song.title}', artist: '${song.artist}', album: '${song.album}', duration: '${song.duration}' },`
         )
       }, '')
       return (
