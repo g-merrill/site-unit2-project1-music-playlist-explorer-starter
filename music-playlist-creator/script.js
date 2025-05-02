@@ -8,9 +8,24 @@ function openModal(playlist) {
   document.getElementById(
     'playlistAuthor',
   ).innerText = `Author: ${playlist.author}`
-  document.getElementById(
-    'playlistSongs',
-  ).innerHTML = `<strong>Songs:</strong> ${playlist.songs.join(', ')}`
+  const songsHtml = playlist.songs.reduce((acc, song, idx) => {
+    return (
+      acc +
+      `
+        <div class="modal-song-row">
+          <img src="${song.image}" alt="song image" width="75px">
+          <div class="modal-song-text-ctnr">
+            <h3>${song.title}</h3>
+            <p>${song.artist}</p>
+            <p>${song.album}</p>
+          </div>
+          <p class="modal-song-duration">3:00</p>
+        </div>
+    `
+    )
+  },
+  '')
+  document.getElementById('playlistSongs').innerHTML = songsHtml
   modal.style.display = 'block'
 }
 

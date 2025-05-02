@@ -16,7 +16,7 @@
 
     <main>
       <div class="playlist-cards">
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 1', imageUrl: './assets/img/playlist.png', author: 'Author Name 1', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 2', imageUrl: './assets/img/playlist.png', author: 'Author Name 2', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 3', imageUrl: './assets/img/playlist.png', author: 'Author Name 3', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -79,7 +79,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 4', imageUrl: './assets/img/playlist.png', author: 'Author Name 4', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 5', imageUrl: './assets/img/playlist.png', author: 'Author Name 5', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 6', imageUrl: './assets/img/playlist.png', author: 'Author Name 6', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -142,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 7', imageUrl: './assets/img/playlist.png', author: 'Author Name 7', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -163,7 +163,7 @@
             </div>
           </div>
         </div>
-        <div class="playlist-card">
+        <div class="playlist-card" onclick="openModal({title: 'Playlist Title 8', imageUrl: './assets/img/playlist.png', author: 'Author Name 8', songs: [{ image: './assets/img/song.png', title: 'Song Title 1', artist: 'Artist Name 1', album: 'Album Name 1' }, { image: './assets/img/song.png', title: 'Song Title 2', artist: 'Artist Name 2', album: 'Album Name 2' }, { image: './assets/img/song.png', title: 'Song Title 3', artist: 'Artist Name 3', album: 'Album Name 3' }]})">
           <img
             src="./assets/img/playlist.png"
             alt="playlist image"
@@ -184,11 +184,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div
-        onclick="openModal({title: 'Playlist Title', imageUrl: './assets/img/playlist.png', author: 'Author Name', songs: ['Song A', 'Song B']})"
-      >
-        Click here for playlist details!
       </div>
     </main>
     <!-- Modal Structure -->
@@ -202,8 +197,8 @@
           </div>
           <span class="close">&times;</span>
         </div>
-        <div id="playlistSongs" style="display: none;"></div>
-        <div class="modal-song-row">
+        <div id="playlistSongs"></div>
+        <!-- <div class="modal-song-row">
           <img src="./assets/img/song.png" alt="song image" width="75px">
           <div class="modal-song-text-ctnr">
             <h3>Song Title</h3>
@@ -229,7 +224,7 @@
             <p>Album Name</p>
           </div>
           <p class="modal-song-duration">0:00</p>
-        </div>
+        </div> -->
       </div>
     </div>
 
