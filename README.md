@@ -116,7 +116,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-<div style="position: relative; padding-bottom: 69.4980694980695%; height: 0;"><iframe src="https://www.loom.com/embed/86a35968edd9417fbee9011ddee6d7cf?sid=4d070b3a-6926-44a6-876c-0a55083f2a8a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+`<div style="position: relative; padding-bottom: 69.4980694980695%; height: 0;"><iframe src="https://www.loom.com/embed/86a35968edd9417fbee9011ddee6d7cf?sid=4d070b3a-6926-44a6-876c-0a55083f2a8a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
 
 ### Reflection
 
