@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <link rel="stylesheet" href="featured.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Music Playlist Explorer</h1>
+      <a href="index.html">Go to Index Page</a>
+      <a href="featured.html">Get New Random Playlist</a>
+    </header>
+
+    <main>
+      <!-- <div id="playlistsContainer" class="playlist-cards"></div> -->
+      <!-- Modal Structure -->
+      <div id="playlistModal" class="modal-overlay">
+        <div class="modal-content">
+          <div class="modal-playlist-row">
+            <img id="playlistImage" src="" alt="Playlist Image" width="250px" />
+            <div class="modal-playlist-text-ctnr">
+              <h1 id="playlistTitle"></h1>
+              <p id="playlistAuthor"></p>
+              <button id="shuffleButton" class="shuffle-btn" onclick="shuffleSongs()"><img src="./assets//img/shuffle.png" alt="shuffle" width="15px" class="shuffle-btn-img"><span class="shuffle-btn-text">Shuffle</span></button>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+          <div id="playlistSongs" class="modal-songs-ctnr"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Explore cool playlists while you're here!</p>
+    </footer>
+    <script src="data/data.json"></script>
+    <script src="featured.js"></script>
+  </body>
+</html>
