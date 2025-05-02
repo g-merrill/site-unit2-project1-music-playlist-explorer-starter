@@ -10,56 +10,61 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 #### CORE FEATURES
 
-- [X] **Display Playlists**
-  - [X] Dynamically render playlists on the homepage using JavaScript.
-    - [X] Playlists should be shown in grid view.
-    - [X] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
-  - [X] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
+- [x] **Display Playlists**
 
-- [X] **Playlist Components**
-  - [X] Each tile should display the playlist's:
-    - [X] Cover image
-    - [X] Name
-    - [X] Author
-    - [X] Like count
+  - [x] Dynamically render playlists on the homepage using JavaScript.
+    - [x] Playlists should be shown in grid view.
+    - [x] Playlist images should be reasonably sized (at least 6 playlists on your laptop when full screen; large enough that the playlist components detailed in the next feature are legible).
+  - [x] Fetch data from a provided Javascript file and use it to create interactive playlist tiles.
 
-- [X] **Playlist Details**
-  - [X] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
-  - [X] The modal should show the playlist's:
-    - [X] Cover image
-    - [X] Name
-    - [X] Author
-    - [X] List of songs, including each song's:
-      - [X] Title
-      - [X] Artist
-      - [X] Duration
-  - [X] The modal itself should:
-    - [X] Not occupy the entire screen.
-    - [X] Have a shadow to show that it is a pop-up.
-    - [X] Appear floating on the screen.
-    - [X] The backdrop should appear darker or in a different shade.
+- [x] **Playlist Components**
 
-- [X] **Like Playlists**
-  - [X] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
-  - [X] When the heart icon is clicked:
-    - [X] If previously unliked:
-      - [X] The like count on the playlist tile should increase by 1.
-      - [X] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been liked by the user.
-    - [X] If previously liked:
-      - [X] The like count on the playlist tile should decrease by 1.
-      - [X] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
-    - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
-      - [X] a playlist with a like count of 0
-      - [X] a playlist with a non-zero like count
+  - [x] Each tile should display the playlist's:
+    - [x] Cover image
+    - [x] Name
+    - [x] Author
+    - [x] Like count
 
-- [X] **Shuffle Songs**
-  - [X] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
-  - [X] When the shuffle button is clicked, the playlist's songs should display in a different order.
-  - [X] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
+- [x] **Playlist Details**
+
+  - [x] Create a modal pop-up view that displays detailed information about a playlist when a user clicks on a playlist tile.
+  - [x] The modal should show the playlist's:
+    - [x] Cover image
+    - [x] Name
+    - [x] Author
+    - [x] List of songs, including each song's:
+      - [x] Title
+      - [x] Artist
+      - [x] Duration
+  - [x] The modal itself should:
+    - [x] Not occupy the entire screen.
+    - [x] Have a shadow to show that it is a pop-up.
+    - [x] Appear floating on the screen.
+    - [x] The backdrop should appear darker or in a different shade.
+
+- [x] **Like Playlists**
+
+  - [x] Implement functionality to allow users to like playlists by clicking a heart icon on each playlist tile.
+  - [x] When the heart icon is clicked:
+    - [x] If previously unliked:
+      - [x] The like count on the playlist tile should increase by 1.
+      - [x] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been liked by the user.
+    - [x] If previously liked:
+      - [x] The like count on the playlist tile should decrease by 1.
+      - [x] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
+    - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
+      - [x] a playlist with a like count of 0
+      - [x] a playlist with a non-zero like count
+
+- [x] **Shuffle Songs**
+  - [x] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
+  - [x] When the shuffle button is clicked, the playlist's songs should display in a different order.
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once.
 
 #### STRETCH FEATURES
 
 - [ ] **Add New Playlists**
+
   - [ ] Allow users to create new playlists.
   - [ ] Using a form, users can input playlist:
     - [ ] Name
@@ -69,9 +74,10 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
       - [ ] Title
       - [ ] Artist
   - [ ] The resulting playlist should display in the grid view.
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
+  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist.
 
 - [ ] **Edit Existing Playlists**
+
   - [ ] Enable users to modify the details of existing playlists.
   - [ ] Add an edit button to each playlist tile.
   - [ ] Users can update the playlist:
@@ -81,15 +87,17 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
   - [ ] The playlist grid view and playlist detail modal should update to display any changes (see Required Features, Criterion 1 & 2).
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself:
     - [ ] Editing all of a playlist's features (name, creator, AND songs)
-    - [ ] Editing some of a playlist's features (name, creator, OR songs) 
+    - [ ] Editing some of a playlist's features (name, creator, OR songs)
 
 - [ ] **Delete Playlists**
+
   - [ ] Add a delete button to each playlist tile within the grid view.
   - [ ] When clicked, the playlist is removed from the playlist grid view.
 
 - [ ] **Search Functionality**
+
   - [ ] Implement a search bar that allows users to filter playlists by:
-    - [ ] Name 
+    - [ ] Name
     - [ ] Author
   - [ ] The search bar should include:
     - [ ] Text input field
@@ -97,7 +105,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
     - [ ] Clear Button
   - [ ] Playlists matching the search query in the text input are displayed in a grid view when the user:
     - [ ] Presses the Enter Key
-    - [ ] Clicks the Submit/Search Button 
+    - [ ] Clicks the Submit/Search Button
   - [ ] User can click the clear button. When clicked:
     - [ ] All text in the text input field is deleted
     - [ ] All playlists in the `data.json` file are displayed in a grid view
@@ -105,7 +113,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
       - [ ] If users can add a playlist, added playlists should be included in search results.
       - [ ] If users can edit a playlist, search results should reflect the latest edits to each playlist.
       - [ ] If users can delete a playlist, deleted playlists should no longer be included in search results.
-      - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
+      - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications.
 
 - [ ] **Sorting Options**
   - [ ] Implement a drop-down or button options that allow users to sort the playlist by:
@@ -116,19 +124,23 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-[Link to Loom Video Walkthrough](https://www.loom.com/share/86a35968edd9417fbee9011ddee6d7cf?sid=6f265c9d-dd61-46ff-9927-39b3c9a1a45b)
+<div>
+  <a href="https://www.loom.com/share/86a35968edd9417fbee9011ddee6d7cf">
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/86a35968edd9417fbee9011ddee6d7cf-19e29ca6d45497d7-full-play.gif">
+  </a>
+</div>
 
 ### Reflection
 
-* Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
+- Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
 Yes, the labs helped establish the fundamentals that we used throughout the project.
 
-* If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
-  
+- If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
+
 I definitely would have liked to dip into more of the stretch goals, but unfortunately had a pretty busy work week cutting into my available time to work on the project.
 
-* Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+- Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
 We didn't do a project demo but I'm sure everyone would have crushed it!
 
