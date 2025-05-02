@@ -85,16 +85,6 @@ footer p {
   margin: 10px 0;
 }
 
-.playlist-like-ctnr {
-  display: flex;
-  align-items: center;
-}
-
-.playlist-like-heart {
-  height: 16px;
-  margin-right: 5px;
-}
-
 /* CSS for Modal */
 .modal-overlay {
   display: none; /* Hidden by default */
@@ -153,4 +143,38 @@ footer p {
 
 .no-playlists {
   padding: 1rem;
+}
+
+.playlist-like-ctnr {
+  display: flex;
+  align-items: center;
+}
+
+.hearts-ctnr {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease;
+}
+
+.hearts-ctnr:hover {
+  transform: scale(1.5);
+}
+
+.playlist-like-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  transition: all 0.3s ease;
+}
+
+.playlist-like-heart.selected {
+  opacity: 100%;
+}
+
+.playlist-like-value {
+  margin-left: 10px;
 }
